@@ -1,14 +1,15 @@
 # vibe
 
-The Claude Code skill that lets you actually vibe while Claude works. Curate a playlist of media via links and Claude creates a locally hosted lounge experience for you tailored to the estimated work time of Claude's session.
+The Claude Code plugin that lets you actually vibe while Claude works. Curate a playlist of media via links and Claude creates a locally hosted lounge experience for you tailored to the estimated work time of Claude's session.
 
 ## Install
 
-```bash
-git clone https://github.com/onchaindom/vibeskill.git ~/.claude/skills/vibe/
-```
+Add the marketplace and install the plugin:
 
-That's it. The repo root *is* the skill directory.
+```
+/plugin marketplace add onchaindom/vibeskill
+/plugin install vibe@onchaindom-plugins
+```
 
 ## Usage
 
@@ -35,7 +36,7 @@ I need some focus tunes
 
 ## Add your own vibes
 
-Create a JSON file in `vibes/` following the schema in `vibes/vibes.schema.json`:
+Create a JSON file in `plugins/vibe/vibes/` following the schema in `plugins/vibe/vibes/vibes.schema.json`:
 
 ```json
 {
@@ -60,16 +61,16 @@ Set `duration_minutes` to `null` for livestreams.
 This project uses GitHub's fork network for sharing:
 
 1. Fork this repo
-2. Add your playlists to `vibes/`
+2. Add your playlists to `plugins/vibe/vibes/`
 3. Push to your fork
 4. Others discover your vibes through the fork network
 
-See `references/community.md` for more details.
+See `plugins/vibe/references/community.md` for more details.
 
 ## Manual usage
 
 ```bash
-python3 scripts/vibe_lounge.py --duration 30 --vibes-file vibes/default.json
+python3 plugins/vibe/scripts/vibe_lounge.py --duration 30 --vibes-file plugins/vibe/vibes/default.json
 ```
 
 Options:

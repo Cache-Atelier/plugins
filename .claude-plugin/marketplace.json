@@ -1,0 +1,25 @@
+{
+  "name": "onchaindom-plugins",
+  "owner": {
+    "name": "onchaindom"
+  },
+  "metadata": {
+    "description": "Plugins by @onchaindom — vibes, tools, and experiments for Claude Code."
+  },
+  "plugins": [
+    {
+      "name": "vibe",
+      "source": "./plugins/vibe",
+      "description": "Curates ambient music and opens a lounge page with embedded players and a countdown timer. Use when you want vibes, focus music, or background tunes.",
+      "version": "1.0.0",
+      "author": {
+        "name": "onchaindom"
+      },
+      "homepage": "https://github.com/onchaindom/vibeskill",
+      "repository": "https://github.com/onchaindom/vibeskill",
+      "license": "MIT",
+      "keywords": ["music", "vibes", "lounge", "ambient", "focus"],
+      "category": "productivity"
+    }
+  ]
+}

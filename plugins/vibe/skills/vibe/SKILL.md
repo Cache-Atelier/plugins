@@ -33,10 +33,10 @@ Use your judgment — these are rough guides. When in doubt, round up.
 2. **Run the script** — execute:
 
 ```bash
-python3 <skill_directory>/scripts/vibe_lounge.py --duration <MINUTES> --vibes-file <skill_directory>/vibes/default.json
+python3 <plugin_root>/scripts/vibe_lounge.py --duration <MINUTES> --vibes-file <plugin_root>/vibes/default.json
 ```
 
-Replace `<skill_directory>` with the actual path to this skill's directory (where this SKILL.md lives). **Run this in the background** — the script starts a local HTTP server (required for YouTube embeds) and stays running. It will:
+Replace `<plugin_root>` with the path to the plugin root (two directories above this SKILL.md file — the directory containing `scripts/`, `vibes/`, and `assets/`). **Run this in the background** — the script starts a local HTTP server (required for YouTube embeds) and stays running. It will:
 - Load the playlist
 - Select media to cover the session duration
 - Generate an HTML lounge page
